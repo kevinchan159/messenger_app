@@ -166,6 +166,7 @@
 				TargetAttributes = {
 					C2CC9F121F19236C00B4A1E2 = {
 						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = JAY3LN6548;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -382,6 +383,7 @@
 			baseConfigurationReference = C3E4BFD28B547071DC94439B /* Pods-FBMessenger.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = JAY3LN6548;
 				INFOPLIST_FILE = FBMessenger/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = kevinchan.FBMessenger;
@@ -395,6 +397,7 @@
 			baseConfigurationReference = 32BF9A2B86DBA25F79A5313F /* Pods-FBMessenger.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = JAY3LN6548;
 				INFOPLIST_FILE = FBMessenger/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = kevinchan.FBMessenger;

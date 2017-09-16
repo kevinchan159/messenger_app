@@ -43,7 +43,8 @@ class FriendsTableViewController: UITableViewController {
         }, withCancel: nil)
             
         tableView.register(FriendCell.self, forCellReuseIdentifier: "friendCellId")
-        tableView.separatorColor = .blue
+        
+        
     }
 
 
@@ -121,24 +122,13 @@ class FriendsTableViewController: UITableViewController {
         userSelectedIDRef.updateChildValues([childIDRef.key: 0]) // the 0 is not important, just need it as a value for key
         
         // navigate to other View Controllers
-        messagesCollectionView.reloadData()
+        let indexPath = IndexPath(item: 0, section: 0)
+        messagesCollectionView.insertItems(at: [indexPath])
         navigationController?.popViewController(animated: true)
-        
-        // fetch selected user's profile image
-//        let cell = tableView.cellForRow(at: indexPath) as! FriendCell
-//        let friendProfileImage = cell.profileImageView.image
-//        let layout = UICollectionViewFlowLayout()
-//        let chatViewController = ChatViewController(collectionViewLayout: layout)
-//        chatViewController.user1Id = Auth.auth().currentUser?.uid
-//        chatViewController.user2Id = user.userId
-//        chatViewController.title = user.name
-//        chatViewController.friendProfileImage = friendProfileImage
-//        chatViewController.messagesCell = messagesCollectionView.cellForItem(at: IndexPath(item: 0, section: 0)) as! MessagesCell
-//        navigationController?.pushViewController(chatViewController, animated: true)
         
         
         tableView.reloadData()
-
+        
 
     }
     
