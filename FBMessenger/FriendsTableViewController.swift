@@ -115,6 +115,7 @@ class FriendsTableViewController: UITableViewController {
         let values = ["text": message.text, "senderId": message.senderId, "receiverId": message.receiverId, "date": formattedDate, "timeSince1970": message.timeSince1970] as [String : Any]
         childIDRef.updateChildValues(values)
         
+        
         let currentUserIDRef = Database.database().reference().child("user-messages").child((Auth.auth().currentUser?.uid)!)
         currentUserIDRef.updateChildValues([childIDRef.key: 0]) // the 0 is not important, just need it as a value for key
 
